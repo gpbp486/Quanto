@@ -1,0 +1,42 @@
+h1 {
+    font-family: Arial;
+    color:darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+#otherh1{
+    color:rgb(129, 96, 13);
+}
+.list{
+    color:brown;
+}
+p{
+    /*background-color: bisque;*/
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 900;
+    color: hsl(23, 78%, 33%);
+    width: fit-content;
+    height: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+#p2{
+    text-decoration: underline; /*Underlines Text*/
+    font-weight: 900; /*Emboldens Text*/
+    font-style: italic; /*Italicizes Text*/
+    color: #591dca;
+}
+body{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
