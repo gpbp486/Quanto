@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Quanto Chatbot</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chat</div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="user-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById("chat-messages");
+        const messageInput = document.getElementById("message-input");
+        const sendButton = document.getElementById("send-button");
+
+        // Function to auto-scroll the chat container to the bottom
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        sendButton.addEventListener("click", () => {
+            const message = messageInput.value.trim();
+            if (message !== "") {
+                const messageElement = document.createElement("div");
+                messageElement.textContent = message;
+                chatMessages.appendChild(messageElement);
+                messageInput.value = "";
+                scrollToBottom(); // Auto-scroll when a new message is added
+            }
+        });
+
+        messageInput.addEventListener("keyup", (event) => {
+            if (event.key === "Enter") {
+                sendButton.click();
+            }
+        });
+
+        // Initial auto-scroll to the bottom of the chat
+        scrollToBottom();
+    </script>
+</body>
+
+
+<body>
+    <div>
+        <h1>Quanto Wizz Bizz</h1>
+        <h1 id="otherh1">The Better Quantum Computing Educator</h1>
+    </div>
+</body>
+
+<section>
+    <nav>
+        <p>Ya boy Quanto</p>
+        <ol class="list">
+            <li>The man</li>
+            <li>The myth</li>
+            <li>The legend</li>
+        </ol>
+    </nav>
+    <article>
+        <img src="QuantoBall_WithFace.png" alt="quantum particle with face" height="200" width="200"/> 
+    </article>
+</section>
+
+
+<footer>
+    <a href="https://hackrpi.com">HackRPI</a>
+    <a href="https://quantum-computing.ibm.com/composer/files/new">IBM Quantum Computing Composer</a>
+    <a href="https://quantumatlas.umd.edu/">The Quantum Atlas</a>
+    <a href="https://www.youtube.com/Qiskit">Qiskit Youtube Channel</a>
+</footer>
+</html>
+
+
+
+

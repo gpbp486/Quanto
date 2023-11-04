@@ -1,4 +1,7 @@
-h1 {
+* {
+    box-sizing: border-box;
+  }
+  h1 {
     font-family: 'Courier New', Courier, monospace;
     color:#7921f4;
     display: flex;
@@ -12,7 +15,7 @@ h1 {
     color:#e585d3;
 }
 .list{
-    color:#58e61b;
+    color:#57F5C4;
 }
 p{
     /*background-color: bisque;*/
@@ -39,6 +42,98 @@ body{
     flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+}
+  
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+/* Style the content */
+article {
+-webkit-flex: 3;
+-ms-flex: 3;
+flex: 3;
+padding: 10px;
+}
+/* Style the footer */
+footer {
+    /*background-color: #7921f4;*/
+    padding: 10px;
+    text-align: center;
+    color: #57F5C4;
+  }
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #58e61b;
+}
+
+.chat-header {
+    background-color: #333;
+    color: #58e61b;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.user-input {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.user-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #000000;
+    color: #58e61b;
+}
+
+.user-input button {
+    background-color: #333;
+    color: #58e61b;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 /*
