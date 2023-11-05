@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="templates/static/css/index.css">
+    <link rel="stylesheet" href="static/style.css">
     <title>Quanto Chatbot</title>
 </head>
 
@@ -13,17 +13,21 @@
         <p>Ya boy Quanto</p>
     </div>
     <div class="quanto">
-        <img src="templates/QuantoBall_WithFace.png" alt="quantum particle with face" height="200" width="200"/> 
+        <img src="static/QuantoBall_WithFace.png" alt="quantum particle with face" height="200" width="200"/> 
     </div>
     <div class="chat-container">
         <div class="chat-header">Chat</div>
         <div class="chat-messages" id="chat-messages"></div>
-        <div class="user-input">
-            <input type="text" id="message-input" placeholder="Type your message...">
+        <div class="chat-messages" id="chat-messages">
+            <div class="message">{{ initial_message }}</div>
+        </div>
+        <div class="user_input">
+            <input type="text" id="message_input" placeholder="Type your message...">
             <button id="send-button">Send</button>
         </div>
     </div>
-    <script src="templates/index.js"></script>
+    {% block content %}{% endblock %}
+    <script src="static/index.js"></script>
 </body>
 
 <footer>
