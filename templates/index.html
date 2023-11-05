@@ -18,12 +18,16 @@
     <div class="chat-container">
         <div class="chat-header">Chat</div>
         <div class="chat-messages" id="chat-messages"></div>
-        <div class="user-input">
-            <input type="text" id="message-input" placeholder="Type your message...">
+        <div class="chat-messages" id="chat-messages">
+            <div class="message">{{ initial_message }}</div>
+        </div>
+        <div class="user_input">
+            <input type="text" id="message_input" placeholder="Type your message...">
             <button id="send-button">Send</button>
         </div>
     </div>
-    <script src="index.js"></script>
+    {% block content %}{% endblock %}
+    <script src="static/index.js"></script>
 </body>
 
 <footer>
