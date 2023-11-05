@@ -40,7 +40,7 @@ def index():
 
 
 
-@app.route('/<message_input>')
+@app.route('/message_input=<message_input>')
 def query(message_input):
     post = get_response(message_input)
     return render_template('answer.html', answer=post)

@@ -10,12 +10,12 @@ function scrollToBottom() {
 }
 
 // Display the initial message
-if (initialMessage) {
-    const initialMessageText = initialMessage.textContent;
-    const initialMessageElement = document.createElement("div");
-    initialMessageElement.textContent = "Quanto: " + initialMessageText;
-    chatMessages.appendChild(initialMessageElement);
-}
+// if (initialMessage) {
+//     const initialMessageText = initialMessage.textContent;
+//     const initialMessageElement = document.createElement("div");
+//     initialMessageElement.textContent = "Quanto: " + initialMessageText;
+//     chatMessages.appendChild(initialMessageElement);
+// }
 
 
 messageInput.addEventListener("keyup", (event) => {
