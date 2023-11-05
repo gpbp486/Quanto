@@ -8,11 +8,18 @@ function scrollToBottom() {
 }
 
 sendButton.addEventListener("click", () => {
-    const message = messageInput.value.trim();
+    const userMessage  = messageInput.value.trim();
     if (message !== "") {
-        const messageElement = document.createElement("div");
-        messageElement.textContent = message;
+        // User message
+        const userMessageElement = document.createElement("div");
+        userMessageElement.textContent = "You: " + userMessage;
         chatMessages.appendChild(messageElement);
+
+        // Response message
+        const responseMessageElement = document.createElement("div");
+        responseMessageElement.textContent = "Quanto: " + userMessage;
+        chatMessages.appendChild(responseMessageElement);
+
         messageInput.value = "";
         scrollToBottom(); // Auto-scroll when new message added
     }
