@@ -1,9 +1,12 @@
 * {
+    padding:0;
+    margin:0;
     box-sizing: border-box;
-  }
-  h1 {
+}
+
+body{
+    background-color: #000000;
     font-family: 'Courier New', Courier, monospace;
-    color:#7921f4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,84 +14,37 @@
     width: 100%;
     height: 100%;
 }
-#otherh1{
-    color:#e585d3;
+
+h1{
+    color:#7921f4;
 }
-.list{
-    color:#57F5C4;
-}
+
 p{
-    /*background-color: bisque;*/
     font-size: x-large;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 900;
-    color: #f46329;
+    color: #58e61b;
     width: fit-content;
     height: 50%;
     padding: 10px;
     margin: 5px;
 }
-#p2{
-    text-decoration: underline; /*Underlines Text*/
-    font-weight: 900; /*Emboldens Text*/
-    font-style: italic; /*Italicizes Text*/
-    color: #57f5c4;
-}
-body{
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
 
-
-/* Container for flexboxes */
-section {
-    display: -webkit-flex;
-    display: flex;
-}
-/* Style the navigation menu */
-nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-}
-  
-/* Style the list inside the menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-  
-/* Style the content */
-article {
--webkit-flex: 3;
--ms-flex: 3;
-flex: 3;
-padding: 10px;
-}
-/* Style the footer */
 footer {
-    /*background-color: #7921f4;*/
     padding: 10px;
     text-align: center;
-    color: #57F5C4;
+    color: #e585d3;
+    position: fixed;
+    bottom: 10px;
   }
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
+
+.quanto {
+    border: 1px solid #57F5C4;
+    border-radius: 50px;
+    color: #58e61b;
   }
 
 .chat-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
     width: 300px;
     background-color: #000000;
