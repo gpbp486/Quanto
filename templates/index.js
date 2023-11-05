@@ -25,7 +25,6 @@ messageInput.addEventListener("keyup", (event) => {
 });
 
 
-
 sendButton.addEventListener("click", async () => {
     const userMessage = messageInput.value.trim();
     if (userMessage !== "") {
@@ -53,7 +52,6 @@ async function sendMessageToServer(userMessage) {
     const data = await response.json();
     return data.answer;
 }
-
 
 // Initial auto-scroll to the bottom
 scrollToBottom();
