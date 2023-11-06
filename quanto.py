@@ -4,7 +4,7 @@ import openai
 
 # Load your API key from an environment variable or secret management service
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 'SECRET KEY'
 
 
 openai.api_key = OPENAI_API_KEY
