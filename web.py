@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 # Load your API key from an environment variable or secret management service
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 'SCRET_KEY'
 openai.api_key = OPENAI_API_KEY
 mess = [{'role':'system', 'content':'You are a helful assistant on a website for children. The website teaches them the basics of Quantum Computing\n'
 	            	'You have vast knowledge of quantum physics and quantum computing\n'
