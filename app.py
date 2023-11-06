@@ -6,7 +6,7 @@ import openai
 app = Flask(__name__)
 
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 'SECRET_KEY'
 
 
 openai.api_key = OPENAI_API_KEY
